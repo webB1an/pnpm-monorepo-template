@@ -1,7 +1,7 @@
 import { execSync } from 'child_process'
 import fg from 'fast-glob'
 
-const getPackages = (packagePath) =>
+const getPackages = (packagePath: string) =>
   fg.sync('*', { cwd: packagePath, onlyDirectories: true })
 
 const scopes = [
